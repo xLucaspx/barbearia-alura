@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Página de contato da Barbearia Alura. Aqui você pode agendar um horário, 
+        mandar uma mensagem e assinar nossa newsletter.">
+        <meta name="viewport" content="width=device-width">
+
+        <title>Barbearia Alura - Contato</title>
+
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap">
+    </head>
+    <body>
+        <header>
+            <div class="cabecalho">
+                <h1>
+                    <a href="index.html" title="Página inicial">
+                        <img src="img/logo.png" alt="Logo da Barbearia Alura na cor preta."
+                        width="177" height="250" id="logo"> 
+                    </a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="produtos.html">Produtos</a>
+                        </li>
+                        <li>
+                            <a href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form>
+                <p>Os campos com * são obrigatórios!</p>
+                <label for="nomecompleto">Nome Completo*</label>
+                <input class="input-padrao" type="text" id="nomecompleto" required
+                placeholder="Nome e Sobrenome">
+
+                <label for="email">Email*</label>
+                <input class="input-padrao" type="email" id="email" required
+                placeholder="seuemail@dominio.com">
+
+                <label for="telefone">Telefone*</label>
+                <input class="input-padrao" type="tel" id="telefone" required
+                placeholder="(xx) xxxxx-xxxx">
+
+                <label for="mesagem">Mensagem</label>
+                <textarea cols="70" rows="5" id="mensagem"
+                placeholder="Ex.: Gostaria de agendar um corte de cabelo e barba para o próximo sábado."></textarea>
+
+                <fieldset>
+                    <legend>Em qual horário prefere seu atendimento?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Como prefere o nosso contato?</legend>
+
+                    <label for="radio-email">
+                        <input type="radio" name="contato" value="email" id="radio-email">
+                        Email
+                    </label>
+                    
+                    <label for="radio-telefone">
+                        <input type="radio" name="contato" value="telefone" id="radio-telefone">
+                        Telefone
+                    </label>
+
+                    <label for="radio-whatsapp">
+                        <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>
+                        WhatsApp
+                    </label>
+                </fieldset>
+
+                <label class="checkbox">Gostaria de receber nossas novidades por email?
+                    <input type="checkbox" checked>
+                </label>
+
+                <input class="enviar" type="submit" value="Enviar">
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dias</th>
+                        <th>Horários</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>De Terça à Sexta</td>
+                        <td>Das 8h às 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sábados e Domingos</td>
+                        <td>Das 9h às 18h</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Estamos te esperando!</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </main>
+        <footer>
+            <div class="logo-footer">
+                <img src="img/logo-branco.png" alt="Logo da Barbearia Alura na cor branca."
+                width="177" height="250">
+            </div>
+            <div class="redes">
+                <a href="https://github.com/xLucaspx" title="xLucaspx | GitHub">
+                    <img src="img/github-logo.png" alt="Logo do GitHub" width="45" height="45">
+                </a>
+                <a href="https://www.linkedin.com/in/xlucaspx/" title="Lucas da Paz | LinkedIn">
+                    <img src="img/linkedin-logo.png" alt="Logo do LinkedIn" width="45" height="45">
+                </a>
+                <a href="https://www.instagram.com/luacspaz/" title="Luacs da Paz (@luacspaz) | Instagram">
+                    <img src="img/instagram-logo.png" alt="Logo do Instagram" width="45" height="45">
+                </a>
+            </div>
+            <p class="copyright">Desenvolvido por Lucas da Paz</p>
+            <p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
+        </footer>
+    </body>
+</html>
