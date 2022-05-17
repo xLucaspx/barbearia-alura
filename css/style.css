@@ -254,13 +254,22 @@ footer {
     background-image: url(../img/bg.jpg);
     padding: 15px 0px;
 }
+.redes a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+.redes img:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+    opacity: 60%;
+}
 .copyright {
     font-size: 13px;
     color: white;
     margin-top: 15px;
 }
 /* Media queries */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 825px) {
     body {
         font-size: 16px;
     }
@@ -307,6 +316,7 @@ footer {
         padding: 0;
     }
     .beneficios {
+        text-align: center;
         padding: 1rem 0;
         margin: 1rem;
     }
@@ -327,6 +337,9 @@ footer {
         display: inline-block;
         width: 75%;
         margin: 1rem 2rem;
+    }
+    .produtos-descricao {
+        font-size: 18px;
     }
     /* Contato */
     form {
